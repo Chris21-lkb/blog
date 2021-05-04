@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-content {
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 500px;
+    background-color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-title ul li {
+    display: inline-block;
+}
+
+.header-title ul li a {
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.header-links ul li {
+    display: inline-block;
+}
+
+.header-links ul li a {
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin-bottom: 100px;
+}
