@@ -35,21 +35,16 @@ class headerController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'file_path' => 'required'
-        ]);
-
         $file_path = $request ->file('file_path')->getClientOriginalName();
 
         $request -> file('file_path') -> storeAs('public/headerpicture/', $file_path );
 
-        $picture = new Header();
+        $header = new Header();
 
-        $picture->file_path = $file_path;
+        $header->file_path = $file_path;
 
-        $picture->save();
-
-        return redirect()->back();
+        $header->save();
+        return "okok";
     }
 
     /**
